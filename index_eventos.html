@@ -1,0 +1,70 @@
+
+<!-- Ejemplo onload event -->
+
+<!DOCTYPE html>
+<html>
+<head>
+
+ <!-- script javascript     -->
+ <script>
+  function mifuncion() {
+    alert("hola");
+  }
+
+  // desenvolupa funció:
+  // mostre missatge "hola" 1 finestra
+// s'obri altra finestra mostre "bon dia"
+  </script>
+  <script>
+function divendres(){
+  alert("hola");
+  alert("bon dia");
+}
+  </script>
+
+<!-- script javascript     -->
+<script>
+function myFunction() {
+  alert("bon dia");
+}
+</script>
+</head>
+
+<body >
+<h1>Eventos HTML</h1>
+<p>Escribe en el cuadro de texto</p>
+<!-- introdueix caixa de text que execute funció en event onkeydown la funció mostrará missatge "s'ha executat event onkeydown" -->
+<!-- introdueix la caixa de text 1 -->
+<script>
+  function uno(){
+    alert("s'ha executat event onkeydown");
+  }
+</script>
+<br>
+<p>caixa 1</p>
+<input type="text" onkeydown="uno()">
+
+<!-- introdueix caixa de text que execute funció en event onkeydown la funció mostrará missatge "s'ha executat event onkeypress" -->
+<!-- introdueix la caixa de text 2 -->
+<script>
+  function dos(){
+    alert("s'ha executat event onkeypress");
+  }
+</script>
+<br>
+<p>caixa 2</p>
+<input type="text" onkeypress="dos()">
+<!-- introdueix caixa de text que execute funció en event onkeydown la funció mostrará missatge "s'ha executat event onkeyup" -->
+<!-- introdueix la caixa de text 3 -->
+<script>
+  function tres(){
+    alert("s'ha executat event onkeyup");
+  }
+</script>
+<br>
+<p>caixa 3</p>
+<input type="text" onkeyup="tres()">
+
+</body>
+
+</html>
