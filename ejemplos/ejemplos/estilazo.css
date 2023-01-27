@@ -1,0 +1,80 @@
+header{
+    background-color: aqua;
+}
+nav{
+    background-color: aquamarine;
+}
+span.text_verd{
+    color: green;
+}
+p.divendres{
+    color: red;
+}
+span.hui{
+    color:green;
+}
+div.bloc1{
+    color: red;
+    background-color: blue;
+    display: block;
+}
+div.bloc2{
+    color: green;
+    background-color: yellow;
+}
+span.caja{
+    /* color de fons */
+    background-color: yellow; 
+    /* color de borde */
+    border: 1px solid red;
+    width: 250px;
+    height: 100px;
+    display: inline-block;
+
+    /* con span no coge la anchura a no ser que pongamos el display*/
+}
+div.caja{
+      /* color de fons */
+      background-color: yellow; 
+      /* color de borde */
+      border: 1px solid red;
+      width: 250px;
+      height: 100px;
+      display: inline-block;
+}
+span.fecha{
+    font-style: oblique;
+    text-decoration: underline;
+}
+
+span.diners{
+    font-style: oblique;
+}
+
+span.fred{
+    font-weight: bold;
+}
+
+span.small{
+    font-size: small;
+}
+
+span.s{
+    text-decoration: line-through;
+}
+
+span.i{
+    font-style: italic;
+}
+
+span.b{
+    font-weight: bold;
+}
+
+span.mark{
+    background-color: yellow;
+}
+
+
+
+
