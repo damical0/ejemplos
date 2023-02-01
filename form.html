@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+    <a href="form.css"></a>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -58,12 +59,96 @@
             <input type="time" name="hora" id="time">
         </p>
 
+        Major de edat<input type="checkbox" name="major" value="si" checked>
         <p>
+        <p>
+            Qué vehicle tens: <br>
+            moto<input type="checkbox" name="vehicle" value="moto">
+            coche<input type="checkbox" name="vehicle" value="coche">
+            bici<input type="checkbox" name="vehicle" value="bici">
+
+        <p>
+            color favorit: <br>
+           roig <input type="radio" value="color" name="roig">
+           verd <input type="radio" value="color" name="verd">
+        </p>
+        <p>
+        color: <br>
+        <input type="color" value="color" name="color">
+        </p>
+        <p>
+            El teu nivell d'anglés:  <input type="range" value="range" name="rango" min="1" max="10" step="1" id="rango">
+        </p>
+        <p>Nota: <span id="nota"></span></p>
+        <script>
+            var slider = document.getElementById( "rango");
+            var output = document.getElementById( "nota");
+            output.innerHTML = slider.value;
+            slider.oninput = function() {
+            output.innerHTML = this.value;
+            }
+            </script>
+            <p>
+                Archivo: <input type="file" name="archivo" value="fitxer">
+            </p>
+            <p>
+                Observacions: <br>
+                <textarea name="observaciones" id="observaciones" cols="10" rows="2"></textarea>
+            </p>
+            <p>
+                Menú: <br>
+                <select name="menu" id="menu" multiple>
+                    <option value="1">Uno</option>
+                    <option value="2">Dos</option>
+                    <option value="3">Tres</option>
+                    <option value="0" selected>Selecciona Menú</option>
+                </select>
+            </p>
+            <p>
+                Selecciona el teu curs: <br>
+                <select name="curs" id="curs">
+                    <optgroup label="ASIR"></optgroup>
+                        <option value="1asir">Primer</option>
+                        <option value="2ASIR">Segon</option>
+                    <optgroup label="DAM"></optgroup>
+                        <option value="1DAM">Primer</option>
+                        <option value="2DAM">Segon</option>
+                    <optgroup label="DAW"></optgroup>
+                        <option value="1DAW">Primer</option>
+                        <option value="2DAW">Segon</option>
+                </select>
+            </p>
+            <p>
+                <fieldset>
+                    <legend>dades personals</legend>
+                    <p> Nom
+                        <input type="text" name="nom alumne">
+                    </p>
+                    <p>Edat
+                        <input type="number" name="edat_alumne">
+                    </p>
+                </fieldset>
+            </p>
+            <p>
+                <!-- implícita -->
+                <label>
+                <input type="checkbox" name="casilla">
+                Casilla (implícita)
+                </label>
+            </p>
+            <p>
+                <!-- explícita -->
+                <input type="checkbox" name="casilla2" id="casilla2">
+                <label for="casilla2">Casilla (explícita)</label>
+            </p>
+
+
+
+
+
             <input type="submit" value="ENVIAT">
             <input type="reset" value="BORRA">
             <input type="button" value="BOTÓ">
-
-        </p>
     </form>
     </section>
 </body>
