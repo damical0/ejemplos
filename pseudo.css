@@ -1,0 +1,35 @@
+div p{
+    color: red;
+}
+div p:first-child{
+    color: green;
+    /* para referisrse al primer p que hay debajo del div */
+}
+
+a:link{
+    color: orange;
+}
+a:visited{
+    color: pink;
+}
+
+p.hover:hover{
+    color: aqua;
+}
+
+p.active:active{
+    color: chartreuse;
+}
+
+input:focus{
+    color: red;
+    background-color: green;
+}
+
+
+
+
+
+
+
+

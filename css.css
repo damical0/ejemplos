@@ -1,0 +1,87 @@
+
+*{
+    color: blue; 
+/* para que se le aplique a todos */
+}
+p.blau{
+    color: blue;
+}
+.roig{
+    color: red;
+}
+
+p#seleccionar{
+    color: red;
+}
+p{
+    color: green;
+    /* para aplicarselo a todos los parrafos */
+}
+
+h2,h3{
+    color: rgb(179, 179, 18);
+}
+
+div p{
+    color: grey;
+}
+
+div div p{
+    color: blueviolet;
+}
+
+p span{
+    color: coral;
+}
+
+div + p{
+    color: orangered;
+}
+
+a[href="www.google.es"]{
+    color: green;
+}
+
+a[href*=google]{
+    color: black;
+}
+a[href*="portal"]{
+    color: hotpink;
+}
+p::first-line{
+    color: red;
+}
+p.antes::before{
+    content: "dimecres ";
+    
+}
+p.despres::after{
+    content: 2023;
+    color: blue;
+}
+
+h4{
+    counter-reset: cuenta-ciclos;
+}
+p.ciclos::after{
+    content: counter(cuenta-ciclos) ".";
+    counter-increment: cuenta-ciclos;
+    color: brown;
+}
+p.ciclos2::after{
+    content: counter(cuenta-ciclos) ".";
+    counter-increment: cuenta-ciclos 5;
+    color: brown;
+}
+
+
+
+
+
+
+
+
+
+
+
+
